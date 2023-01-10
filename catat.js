@@ -96,3 +96,38 @@
              var text =  input.value;
              span.innerHTML = text;
          }
+
+
+         
+//-------- Query Selector All Luar Biasa -----------------
+
+<div id="box1"></div>
+
+<div class="boxes"></div>
+<div class="boxes"></div>
+<div class="boxes"></div>
+
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+    <div></div>
+</ul>
+
+                 document.getElementById("box1").innerHTML = "Sekolah Koding";
+
+var boxes = document.getElementsByClassName("boxes") ;
+
+ boxes[0].innerHTML = "Sekolah koding versi lama";
+ boxes[1].innerHTML = "Sekolah koding versi terbaru lagi";
+ boxes[2].innerHTML = "Sekolah koding versi terbaru sangat ";
+
+
+ var list = document.getElementsByTagName('li');
+ list[0].innerHTML = "Konten";
+ list[1].innerHTML = "Konten-Konten";
+ list[2].innerHTML = "Konten-BG";
+
+ document.querySelectorAll('#box1')[0].innerHTML = "Sekolah Koding akwoakow";
+ document.querySelectorAll('.boxes')[0].innerHTML = "Sekolah Koding akwoakow";
+ document.querySelectorAll('ul  div')[0].innerHTML = "Sekolah Koding akwoakow";
